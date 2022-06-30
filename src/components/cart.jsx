@@ -7,6 +7,14 @@ font-family: sans-serif;
     height:48vh;
     border:1px solid grey;
 }
+p{
+    font-size:1.5vw;
+ }
+//  h1{
+  
+//         font-size:1.vw;
+   
+//  }
 .card1{
     width:95%
     height:8vh;
@@ -21,12 +29,13 @@ font-family: sans-serif;
 
  }
  .total{
+    padding-top:.5%;
     margin-top:4vh; 
     height:8vh;
     background-color: grey;
     color: white;
  }
-
+ 
 `;
 
 export const Cart=()=>{
@@ -51,7 +60,7 @@ export const Cart=()=>{
          <p>{data.price}</p>
          </div>
          
-         <div className="total">Total: {data.price}</div>
+         <div className="total"><p>Total: {data.price}</p></div>
         </div>
         
         </StyledDiv>
