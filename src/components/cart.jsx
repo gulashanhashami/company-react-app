@@ -48,7 +48,7 @@ export const Cart=()=>{
     //**render the data on browser */
     if(data.length===0){
         return(
-        <h1>Cart is empty</h1> )
+        <h1>No Product added to the cart</h1> )
     }else{
     return (
         <StyledDiv>
