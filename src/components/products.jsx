@@ -7,7 +7,7 @@ const StyledDiv=styled.div`
 font-family: sans-serif;
 .main{
     width:70%;
-    height:48vh;
+    height:45.5vh;
     display:flex;
     margin:auto;
 
@@ -37,8 +37,14 @@ font-family: sans-serif;
     // border:1px solid red;
 
  }
+ p{
+    font-size:1.5vw;
+ }
  .btndiv{
     margin-top:3%;
+ }
+ button{
+    font-size:1.5vw;
  }
  .car{
     width:40%;
