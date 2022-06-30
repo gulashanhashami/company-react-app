@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Cart } from "./cart";
 
 const StyledDiv=styled.div`
-
+font-family: sans-serif;
 .main{
     width:70%;
     height:48vh;
@@ -17,7 +17,7 @@ const StyledDiv=styled.div`
  }
  .contain{
     width:40%;
-    height:48vh;
+    height:45vh;
     display:flex;
     // margin:auto;
 
@@ -38,7 +38,7 @@ const StyledDiv=styled.div`
 
  }
  .btndiv{
-    margin-top:2%;
+    margin-top:3%;
  }
  .car{
     width:40%;
@@ -52,12 +52,14 @@ export const Product=()=>{
     const [items, setItems] =useState(0)
     const [cart, setCart] =useState([])
 
+    //**call the getdata function in useEffect
 useEffect(()=>{
 
     getdata();
    
 }, [])
 
+//**products data */
 const Products = [
 
     {id: 1, name: "Product-1", price:100},
@@ -68,23 +70,24 @@ const Products = [
     
     ];
 
+    //**getdata function to get the data  */
     const getdata=()=>{
         setPdata(Products)
     }
 
+    //**function to icrease decrease the items */
     function result(value){
         setItems(items+value);
     }
    
     // console.log(pdata)
-    var arr=[];
     function addtocart(list){
         setCart(list)
-    //    setCart(...cart, cart)
       
     }
     localStorage.setItem("cartp", JSON.stringify(cart));
-    // console.log(cart)
+
+    //**render the data on browser, using map */
     return (
   <StyledDiv>
     <div className="main">

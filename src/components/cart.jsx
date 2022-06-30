@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyledDiv=styled.div`
+font-family: sans-serif;
 .contain1{
     width56%
     height:48vh;
@@ -34,6 +35,8 @@ export const Cart=()=>{
     var data=JSON.parse(localStorage.getItem("cartp"))
 
     // console.log(data.length)
+
+    //**render the data on browser */
     if(data.length===0){
         return(
         <h1>Cart is empty</h1> )
